@@ -37,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
 
-    <div class="flex">
 
 
         <div class="container">
@@ -63,9 +62,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <!-- ----------------------------------------------------------------------- -->
 
-        <div class="AllUsers">
-            <iframe src="./users.php" frameborder="2" class="TextBlack" width="400" height="285"></iframe>
-        </div>
 
 
     </div>
