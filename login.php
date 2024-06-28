@@ -39,20 +39,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     <div class="container">
-        <h2 class="my-4">Login</h2>
+        <h2>Login</h2>
         <?php if ($error_message): ?>
-            <div class="alert alert-danger"><?php echo $error_message; ?></div>
+            <div class="alert"><?php echo $error_message; ?></div>
         <?php endif; ?>
         <form method="POST" action="">
             <div class="form-group">
                 <label for="inputUsername">Username</label>
-                <input type="text" class="form-control" id="inputUsername" name="username" required>
+                <input type="text" id="inputUsername" name="username" required>
             </div>
             <div class="form-group">
                 <label for="inputPassword">Password</label>
-                <input type="password" class="form-control" id="inputPassword" name="password" required>
+                <input type="password" id="inputPassword" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn">Login</button>
         </form>
     </div>
 
