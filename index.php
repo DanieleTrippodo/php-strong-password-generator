@@ -3,7 +3,7 @@
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header('Location: login.php');
-    exit;
+    exit; // ? non ho capito perchè break no..
 }
 ?>
 
@@ -19,6 +19,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Sessioni</title>
+
+    <!-- Collegamento CSS -->
+     <link rel="stylesheet" href="./style.css">
 </head>
 
 
