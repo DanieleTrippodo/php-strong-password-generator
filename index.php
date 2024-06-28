@@ -49,8 +49,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 <main>
     
     <div class="container">
-        <h2 class="my-4">Benvenuto, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
-        <a href="logout.php" class="btn btn-danger">Logout</a>
+        <h2>Benvenuto, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
+        <a href="logout.php" class="btn btn-danger">Logout</a>  <!-- in caso di logout -->
     </div>
 
 

@@ -14,4 +14,11 @@ $users = [
         'password' => 'password3'
     ]
 ];
+
+
+
+
+var_dump($users);
+
+
 ?>

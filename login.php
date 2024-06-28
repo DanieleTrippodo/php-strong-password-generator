@@ -37,12 +37,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
 
+    <div class="flex">
 
-    <div class="container">
-        <h2>Login</h2>
+
+        <div class="container">
+        <h2 style="margin-bottom: 2.3rem;">Login</h2>
+
         <?php if ($error_message): ?>
             <div class="alert"><?php echo $error_message; ?></div>
         <?php endif; ?>
+
+
         <form method="POST" action="">
             <div class="form-group">
                 <label for="inputUsername">Username</label>
@@ -54,8 +59,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
             <button type="submit" class="btn">Login</button>
         </form>
-    </div>
+        </div>
 
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="AllUsers">
+            <iframe src="./users.php" frameborder="2" class="TextBlack" width="400" height="285"></iframe>
+        </div>
+
+
+    </div>
 
 
 </body>
